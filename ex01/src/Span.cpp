@@ -28,8 +28,8 @@ void Span::addNumber(const int number) {
 }
 
 size_t Span::shortestSpan() {
-	if (vector.size() <= 2) {
-		throw std::runtime_error("Error: Size of the vector is less or equal to 2\n");
+	if (vector.size() < 2) {
+		throw std::runtime_error("Error: Size of the vector is less than 2\n");
 	}
 	std::vector<int> sortedVector = vector;
 	sort(sortedVector.begin(), sortedVector.end());
@@ -44,8 +44,8 @@ size_t Span::shortestSpan() {
 }
 
 size_t Span::longestSpan() {
-	if (vector.size() <= 2) {
-		throw std::runtime_error("Error: Size of the vector is less or equal to 2\n");
+	if (vector.size() < 2) {
+		throw std::runtime_error("Error: Size of the vector is less than 2\n");
 	}
 	std::vector<int> sortedVector = vector;
 	sort(sortedVector.begin(), sortedVector.end());
