@@ -5,6 +5,7 @@
 #include <iostream>
 #include <exception>
 #include <deque>
+#include <list>
 
 template<typename T>
 class MutantStack {
@@ -57,5 +58,9 @@ class MutantStack {
 
 		constIterator end() const noexcept {
 			return (deque_.cend());
+		};
+
+		operator std::stack<T>() const {
+			return (std::stack<T>(deque_));
 		};
 };

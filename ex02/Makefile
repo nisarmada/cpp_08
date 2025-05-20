@@ -13,7 +13,7 @@ SRCS     := $(SRC_DIR)/main.cpp
 OBJS     := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
 # Executable
-TARGET   := span
+TARGET   := stack
 
 # Default target
 all: $(TARGET)
