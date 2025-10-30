@@ -5,7 +5,6 @@
 #include <string>
 #include <list>
 
-
 template<typename T>
 typename T::iterator easyfind(T& container, int n) {
 	typename T::iterator iterator;
