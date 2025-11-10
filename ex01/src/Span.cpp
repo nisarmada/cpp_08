@@ -33,7 +33,7 @@ size_t Span::shortestSpan() {
 	}
 	std::vector<int> sortedVector = vector;
 	sort(sortedVector.begin(), sortedVector.end());
-	size_t minDistance = INT_MAX;
+	size_t minDistance = INT32_MAX;
 	for (auto current = sortedVector.begin(); std::next(current) != sortedVector.end(); ++current) {
 		auto next = std::next(current);
 		size_t currentDistance = static_cast<size_t>(*next - *current);

@@ -6,6 +6,7 @@
 #include <exception>
 #include <deque>
 #include <list>
+#include <stack>
 
 template<typename T>
 class MutantStack {
